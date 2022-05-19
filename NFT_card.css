@@ -121,6 +121,9 @@ h2{
     width: 50%;
 }
 
+.col-6.clone {
+    display: none;
+}
 .col-12 {
     width: 100%;
 }
@@ -209,12 +212,19 @@ img {
     .row {
         max-height: 550px;
         border-radius: 20px;
+        overflow: hidden;
     }
 
     .col-6 {
         width: 100%;
     }
-
+    
+    .col-6:nth-child(3) {
+        display: none;
+    }
+    .col-6.clone {
+        display: block;
+    }
     .hd-txt h2 {
         font-size: 1.32em;
     }
@@ -226,8 +236,7 @@ img {
 
     .sp {
         font-size: 0.5em;
-        padding: unset;
-        padding-top: 15px;
+        padding: 15px 0;
     }
 
     img {
