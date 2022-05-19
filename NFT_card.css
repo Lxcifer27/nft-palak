@@ -113,7 +113,6 @@ h2{
     display: flex;
     flex-flow: row wrap;
     background-color: var(--container-color);
-    padding: 30px;
     max-width: 750px;
     max-height: 350px;
 }
@@ -128,8 +127,8 @@ h2{
 
 img {
     width: 100%;
-    padding: 10px 15px;
-    border-radius: 30px;
+    padding: 0;
+    height: 100%;
 }
 
 .hd-txt h2 {
@@ -180,11 +179,35 @@ img {
 }
 
 /* media query for responsive */
+@media only screen and (max-width: 1440px) {
+    .container {
+        padding: 100px 15%;
+    }
+    .sp {
+        padding: 50px 5% 0;
+    }
+    .credit{
+        position: relative;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .sp {
+        padding: 10px;
+        font-size: 1em;
+    }
+
+    .container {
+        padding: 100px 5%;
+    }
+    .credit{
+        position: relative;
+    }
+}
 
 @media only screen and (max-width: 600px) {
     .row {
         max-height: 550px;
-        padding: 15px;
         border-radius: 20px;
     }
 
@@ -209,7 +232,7 @@ img {
 
     img {
         width: 100%;
-        padding: 30px 15px;
+        padding: 0;
     }
     .credit{
         position: relative;
@@ -217,31 +240,9 @@ img {
     }
 }
 
-@media only screen and (max-width: 768px) {
-    .sp {
-        padding: 10px;
-        font-size: 1em;
-    }
 
-    .container {
-        padding: 100px 5%;
-    }
-    .credit{
-        position: relative;
-    }
-}
-@media only screen and (max-width: 1440px) {
-    .container {
-        padding: 100px 15%;
-    }
-    .sp {
-        padding: 50px 5% 0;
-    }
-    .credit{
-        position: relative;
-    }
-}
-@media only screen and (min-width: 1201px) {
+
+/* @media only screen and (min-width: 1201px) {
     .container {
         padding: 100px 25%;
     }
@@ -250,7 +251,6 @@ img {
         display: flex;
         flex-flow: row wrap;
         background-color: var(--container-color);
-        padding: 30px;
         max-width: 750px;
         max-height: 350px;
     }
@@ -265,8 +265,6 @@ img {
     
     img {
         width: 100%;
-        padding: 10px 15px;
-        border-radius: 30px;
     }
     
     .hd-txt h2 {
@@ -298,4 +296,4 @@ img {
         width: 33.33333333333333%;
         text-align: center;
     }
-}
+} */
